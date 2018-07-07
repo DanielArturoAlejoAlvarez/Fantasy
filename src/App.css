@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Anton:100,300,400,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Anton',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background: #A69D98;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2; 
+  text-align: left!important; 
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: #261E1A;
+  color: white; 
+}
+
+.content {
+  margin-top: 0;  
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid #e20a0a;
+}
+
+.user {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.user span {
+  color: #ff4500;
+}
+
+@media(max-width: 640px){
+  .user {
+    display: none;
+  }
+}
+
+button, input[type="file"] {
+  background: #261E1A;
+  color: white;
+  border: 1px solid #aaa;
+  font-size: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  padding: .3rem .7rem;
+  border-radius: 7px;
+  font-family: 'Anton',sans-serif;
+}
+
+button:hover {
+  background: black;
+  box-shadow: 0px 4px 16px rgba(0,0,0,.4);
+}
+
+.gallery {  
+  width: 100%;
+  display: absolute;
+  margin-top: 25px;
+}
+
+.card-picture {   
+  width: 25%;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.card-picture img {
+  max-height: 250px;
+}
+
+@media(max-width: 640px){
+  .card-picture {
+    width: 100%;
+  }
+
+  .card-picture img {
+    max-width: 100%;
+  }
+}
